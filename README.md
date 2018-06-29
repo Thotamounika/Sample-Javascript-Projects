@@ -1,2 +1,2 @@
 # Sample-Javascript-Projects
-A Sample js projects
+A Collection of Sample js projects
