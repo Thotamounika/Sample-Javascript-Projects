@@ -9,6 +9,12 @@ p{
 	color:#0066cc;
 	font-size:20px
 }
+
+.parent{
+  		display:flex;
+  		flex-direction: row;
+  		justify-content: space-evenly;
+  	}
 input{
 	padding:20px;
 	width:100%;
@@ -20,5 +26,23 @@ input{
 #demo{
 	color:white;
 	font-size:25px;
-	
+}
+button {
+	border-radius: 12px;
+    background-color: #336E7B;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover{
+	border: 2px solid #336E7B;
+	color:#336E7B;
+	background-color:white;
 }
