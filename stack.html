@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stack</title>
+</head>
+<body>
+<h1>Guest List</h1>
+<input type="text" id="box" placeholder="Type something in here..">
+<button onclick="add()">Add</button>
+<button onclick="del()">Delete</button>
+
+<p id="list"></p>
+
+<p id="demo"></p>
+<script>
+var list=[];
+
+
+function add(){
+var temp=document.getElementById('box').value.toUpperCase();
+list.push(temp);
+console.log(list);
+display();
+document.getElementById('box').value="";
+document.getElementById('box').focus();
+}
+
+function display(){
+/*var str="";
+for (var a=list.length-1;a>=0;a--){
+str+="<br>"+list[a];
+}
+document.getElementById('demo').innerHTML=str;*/
+
+var text="<ul>";
+for (var a=list.length-1;a>=0;a--){
+text+="<li id='"+a+"'>"+list[a]+"</li>";
+}
+text+="</ul>";
+document.getElementById('list').innerHTML=text;
+
+}
+function del(){
+list.pop();
+	display();
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
