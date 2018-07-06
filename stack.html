@@ -2,58 +2,52 @@
 <html>
 <head>
 	<title>Stack</title>
+	<link rel="stylesheet" type="text/css" href="cssstyles.css">
+	
+	<style>
+	ul{
+		
+	}
+	li{
+	float:center;
+		border: 1px solid #ffffff;
+		padding: 5px;
+		text-align:center;
+		list-style-type:none;
+		background-color:#86fde8;
+		width:50%
+	}
+	
+	li:nth-child(even){
+		background-color:#3399ff;
+		color:white;
+	}
+	li:nth-child(even):hover{
+		background-color:white;
+		color:#3399ff;
+	}
+	</style>
+	<script src="main.js"></script>
 </head>
 <body>
-<h1>Guest List</h1>
+<h1>Stack Working</h1>
+<hr>
+<p>Stack is a container of objects that are inserted and removed according to the last-in first-out(LIFO) principle.</p>
+<br>
+<br>
 <input type="text" id="box" placeholder="Type something in here..">
-<button onclick="add()">Add</button>
-<button onclick="del()">Delete</button>
-
+<br>
+<br>
+<div class="parent">
+<button onclick="add()">Push</button>
+<button onclick="del()">PoP</button>
+</div>
+<div style="align:center">
 <p id="list"></p>
-
+</div>
 <p id="demo"></p>
 <script>
-var list=[];
-
-
-function add(){
-var temp=document.getElementById('box').value.toUpperCase();
-list.push(temp);
-console.log(list);
-display();
-document.getElementById('box').value="";
-document.getElementById('box').focus();
-}
-
-function display(){
-/*var str="";
-for (var a=list.length-1;a>=0;a--){
-str+="<br>"+list[a];
-}
-document.getElementById('demo').innerHTML=str;*/
-
-var text="<ul>";
-for (var a=list.length-1;a>=0;a--){
-text+="<li id='"+a+"'>"+list[a]+"</li>";
-}
-text+="</ul>";
-document.getElementById('list').innerHTML=text;
-
-}
-function del(){
-list.pop();
-	display();
-}
-
-
-
-
-
-
-
-
 
 </script>
-
 </body>
 </html>
