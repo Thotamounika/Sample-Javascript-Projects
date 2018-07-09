@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions</title>
+</head>
+<body>
+<h1>Regular Expressions</h1>
+<label for="uinput">Enter Words Starting with A or a.</label>
+<input type="text" id="uinput">
+<button onclick="myFunction()">click Me to check</button>
+
+<label for="box2">Enter Words Ending with 'at'.</label>
+<input type="text" id="box2">
+<button onclick="secondFunction()">click Me to check</button>
+<br>
+<label for="search">Enter any word</label>
+<input type="text" id="search" onkeyup="firstFunction()">
+
+<p id="demo"></p>
+<script>
+function firstFunction(){
+
+
+
+
+
+
+
+var letter=document.getElementById('search').value;
+
+if(letter==""){
+	alert("type something");
+	document.getElementById('search').focus();
+	return false;
+}
+
+
+
+
+
+var ar=['apple','ant','art','ankle','antic','banana','bat','car','cat'];
+var str="";
+var exp=new RegExp('^'+(letter),'i');
+
+for(var i=0;i<ar.length;i++){
+	if(exp.test(ar[i])){
+		str+=ar[i]+"<br>";
+	}
+}
+document.getElementById('demo').innerHTML=str;
+
+
+}
+
+
+
+
+
+function secondFunction(){
+	var box2=document.getElementById('box2').value;
+	var exp=new RegExp('(at)$','i');
+if(box2=="")
+{
+	alert("Type something...");
+	document.getElementById('box2').focus();
+	return false;
+}
+else if(exp.test(box2))
+{
+	
+	document.getElementById("demo").innerHTML=box2;
+	document.getElementById('box2').focus();
+	document.getElementById("box2").value="";
+	return true;
+}	
+else{
+alert("NO! Type a String that ends with at");
+
+document.getElementById('box2').focus();
+document.getElementById("box2").value="";
+	
+return false;
+}
+
+
+}
+
+function myFunction(){
+
+var inp=document.getElementById('uinput').value;
+
+var re=new RegExp('^A','i');// i flags helps in case in sesitive matching
+//var re2=new RegExp('^a');
+if(inp=="")
+{
+	alert("Type something...");
+	document.getElementById('uinput').focus();
+	return false;
+}
+else if(re.test(inp))
+{
+alert(re);
+	document.getElementById("demo").innerHTML=inp;
+	document.getElementById('uinput').focus();
+	document.getElementById("uinput").value="";
+	return true;
+}	
+else{
+alert("NO! Type a String that starts with A or a");
+
+document.getElementById('uinput').focus();
+document.getElementById("uinput").value="";
+	
+return false;
+}
+
+
+}
+
+</script>
+</body>
+</html>
