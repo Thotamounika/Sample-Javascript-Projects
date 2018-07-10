@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions</title>
+	<link rel="stylesheet" type="text/css" href="cssstyles.css">
+	<script src="main.js"></script>
+</head>
+<body>
+<h1>Regular Expressions</h1>
+<label for="uinput">Enter Words Starting with A or a.</label>
+<input type="text" id="uinput">
+<button onclick="myFunction()">click Me to check</button><br><br>
+<p id="demo"></p>
+<label for="box2">Enter Words Ending with 'at'.</label>
+<input type="text" id="box2">
+<button onclick="secondFunction()">click Me to check</button><br><br>
+<br>
+
+<label for="word">Enter few words starting with different alphabets</label>
+<input type="text" id="word">
+<button onclick="add()">Add word to list</button><br><br>
+
+<label for="search">Search any word you entered</label>
+<input type="text" id="search" onkeyup="searchFunction()">
+<p> Your Results will be filtered out in here:</p>
+<p id="list"></p>
+<br><br><br><br>
+</body>
+</html>
