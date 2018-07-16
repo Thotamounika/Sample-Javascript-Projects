@@ -1,0 +1,258 @@
+
+<html>
+<head>
+</head>
+<body>
+<script>
+
+var bre=9;
+var hei=9;
+for(var k=0;k<18;k++){
+if(k%2==0){
+document.write("*"+"&nbsp;&nbsp;&nbsp;&nbsp;");	
+				
+			}
+			else{
+				document.write("&nbsp;");
+			}
+	
+}
+for (var j=0;j<9;j++){
+
+for(var i=0;i<bre;i++){
+	document.write("");	
+		}
+		document.write("<br>");
+		if(j!=8)
+		{
+		if(j%2==0){
+		document.write("*");
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;&nbsp;"+"+");
+			}
+			else{
+				document.write("&nbsp;&nbsp;&nbsp;"+"-");
+			}
+			
+		}
+		document.write("&nbsp;&nbsp;"+"*");
+	}
+	else{
+	document.write("*");
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;&nbsp;"+"-");
+			}
+			else{
+				document.write("&nbsp;&nbsp;&nbsp;"+"+");
+			}
+	
+	}
+	document.write("&nbsp;&nbsp;"+"*");
+	}
+	
+}
+document.write("<br>");
+}
+for(var k=0;k<18;k++){
+	if(k%2==0){
+document.write("*"+"&nbsp;&nbsp;");	
+				
+			}
+			else{
+				document.write("&nbsp;");
+			}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var bre=9;
+var hei=9;
+
+for (var j=0;j<9;j++){
+
+for(var i=0;i<bre;i++){
+	document.write("*"+"&nbsp;");	
+		}
+		document.write("<br>");
+		if(j!=8)
+		{
+		if(j%2==0){
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;"+"+");
+			}
+			else{
+				document.write("&nbsp;&nbsp;"+"-");
+			}
+			
+		}
+	}
+	else{
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;"+"-");
+			}
+			else{
+				document.write("&nbsp;&nbsp;"+"+");
+			}
+	
+	}
+	}
+	
+}
+document.write("<br>");
+}
+
+
+
+*/
+
+
+
+
+
+
+
+/*
+var x1=window.prompt("Enter a value");
+//if loop
+if(x1>0){
+	document.write("If: x1 value is greater than 0"+"<br>");
+}
+else if(x1<0){
+	document.write("else if: x1 value is less than 0"+"<br>");
+}
+else
+{
+	document.write("else: x1 is zero"+"<br>");
+}
+
+//switch 
+switch(x1){
+	case 1:document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 2: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 3: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 4: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+		default:
+		document.writeln("In switch x1 value is greater than 4 or less than or equal to 0. x1="+x1+"<br>");
+		
+}
+
+
+
+
+
+
+
+//for loop
+
+for(var i=0;i<x1;i++){
+	document.write("In for loop:"+i+"<br>");
+}
+x1=window.prompt("Enter a value");
+//do while loop
+
+do{
+	document.write("I am in do while loop"+x1+"<br>");
+	x1--;
+}
+while(x1>0);
+x1=window.prompt("Enter a value");
+//while loop
+while(x1>0){
+	document.write("In while loop"+x1+"<br>");
+	x1--;
+}
+
+
+*/
+
+
+/*
+var x=10;
+var y=--x+1;
+alert(y);
+
+var x=10;
+var y=x--+1;
+alert(y);
+
+
+
+
+
+var a=10;
+var b="10";
+
+document.write("Type of a:"+(typeof a)+"<br>");
+document.write("Type of b:"+(typeof b)+"<br>");
+document.write("Is a==b"+(a==b)+"<br>");
+document.write("Is a===b"+(a===b)+"<br>");
+
+var input=window.prompt("Enter temperature in celsius");
+var fahrenheit_result=(9*(input/5))+32;
+alert(fahrenheit_result);
+
+
+
+
+
+
+var year=2018;
+var month='Jul';
+var day=16;
+var full_date=day+"-"+month+"-"+year;
+document.write("<br>"+full_date+"<br>");
+
+var name1="Tom";
+var name2="Jerry";
+
+console.log(name1+" and "+name2)
+document.write(name1+" and "+name2);
+
+var n1="This is";
+var n2="Javascript";
+document.write("<br>"+n1.concat(n2).length);
+*/
+</script>
+</body>
+</html>
+
