@@ -1,0 +1,335 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+
+//function as a value
+/*var f=function(){
+	console.log("hello");
+}
+
+f();*/
+
+
+/*var f=function greet(name){
+	console.log("Hello "+name );
+}
+f("Geeta");
+//Now we cannot use this name. greet("Neeta");
+*/
+
+//function as an argument
+
+/*var f=function(){
+	console.log("hello");
+}
+
+var executor=function(a){
+	a();
+}
+
+executor(f);*/
+
+/*var a=function(){
+	console.log("Apple");
+}
+
+var b=a;
+b();
+a();
+*/
+
+
+
+
+/*var library = [ { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254}, 
+        { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264}, 
+        { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', libraryID: 3245} ]; 
+		
+
+library.sort(function(a,b){
+	if(a.title<b.title)
+	return -1;
+	if(a.title>b.title)
+	return 1;
+	return 0;
+})
+console.log(library);
+
+*/
+
+
+/*
+var no=[1,1,2,2,33,4,3,4,5,6,7,8,6];
+var set=removeDuplicate(no);
+console.log("array without duplicates is:"+set);
+console.log("Original array after removing duplicates is:"+no);
+console.log(no);
+
+
+function isPresent(unique,uno){
+	for(var i=0;i<uno.length;i++){
+		if(unique==uno[i]){
+			return true;
+		}
+	}
+	return false;
+}
+
+//program to eliminate duplicates
+function removeDuplicate(no){
+
+var unique=[];
+
+for(var i=0;i<no.length;i++){
+	if(unique.length==0){
+		unique.push(no[i]);
+	}
+	else
+	{
+		if(!(isPresent(no[i],unique))){
+			unique.push(no[i]);
+		}
+		else{
+			delete no[i];
+		}
+	}
+ }
+ 
+ console.log(unique);
+ return unique;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*var numbers = [3,342,23,22,124];
+console.log(numbers.sort(function(a,b){return b-a;}));
+console.log(numbers[0]);*/
+
+
+/*
+var array=[];
+console.log("array[0] is:"+array[0]);
+
+var myObj={
+	"prop":"hello",
+	"prop1":123,
+	"prop2":true,
+	"objprop":{
+		"Innerprop":"Inner Property"
+	}
+}
+
+console.log(myObj);
+console.log(myObj.objprop);
+console.log(myObj.objprop.Innerprop);
+//console.log(myObj[objprop].Innerprop);
+//console.log(myObj.objprop[Innerprop]);
+
+myObj.objprop.newInnerobj=true;
+console.log(myObj.objprop);
+
+delete myObj.objprop.newInnerobj;
+console.log(myObj.objprop);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+var bre=9;
+var hei=9;
+for(var k=0;k<18;k++){
+if(k%2==0){
+document.write("*"+"&nbsp;&nbsp;&nbsp;&nbsp;");	
+				
+			}
+			else{
+				document.write("&nbsp;");
+			}
+	
+}
+for (var j=0;j<9;j++){
+for(var i=0;i<bre;i++){
+	document.write("");	
+		}
+		document.write("<br>");
+		if(j!=8)
+		{
+		if(j%2==0){
+		document.write("*");
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;&nbsp;"+"+");
+			}
+			else{
+				document.write("&nbsp;&nbsp;&nbsp;"+"-");
+			}
+			
+		}
+		document.write("&nbsp;&nbsp;"+"*");
+	}
+	else{
+	document.write("*");
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;&nbsp;"+"-");
+			}
+			else{
+				document.write("&nbsp;&nbsp;&nbsp;"+"+");
+			}
+	
+	}
+	document.write("&nbsp;&nbsp;"+"*");
+	}
+	
+}
+document.write("<br>");
+}
+for(var k=0;k<18;k++){
+	if(k%2==0){
+document.write("*"+"&nbsp;&nbsp;");	
+				
+			}
+			else{
+				document.write("&nbsp;");
+			}
+	
+}*/
+
+
+
+
+/*
+var bre=9;
+var hei=9;
+for (var j=0;j<9;j++){
+for(var i=0;i<bre;i++){
+	document.write("*"+"&nbsp;");	
+		}
+		document.write("<br>");
+		if(j!=8)
+		{
+		if(j%2==0){
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;"+"+");
+			}
+			else{
+				document.write("&nbsp;&nbsp;"+"-");
+			}
+			
+		}
+	}
+	else{
+		for(var s=0;s<bre-1;s++){
+			if(s%2==0){
+				document.write("&nbsp;&nbsp;"+"-");
+			}
+			else{
+				document.write("&nbsp;&nbsp;"+"+");
+			}
+	
+	}
+	}
+	
+}
+document.write("<br>");
+}
+*/
+/*
+var x1=window.prompt("Enter a value");
+//if loop
+if(x1>0){
+	document.write("If: x1 value is greater than 0"+"<br>");
+}
+else if(x1<0){
+	document.write("else if: x1 value is less than 0"+"<br>");
+}
+else
+{
+	document.write("else: x1 is zero"+"<br>");
+}
+//switch 
+switch(x1){
+	case 1:document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 2: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 3: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+	case 4: document.writeln("In switch x1 value is:"+x1+"<br>");
+		break;
+		default:
+		document.writeln("In switch x1 value is greater than 4 or less than or equal to 0. x1="+x1+"<br>");
+		
+}
+//for loop
+for(var i=0;i<x1;i++){
+	document.write("In for loop:"+i+"<br>");
+}
+x1=window.prompt("Enter a value");
+//do while loop
+do{
+	document.write("I am in do while loop"+x1+"<br>");
+	x1--;
+}
+while(x1>0);
+x1=window.prompt("Enter a value");
+//while loop
+while(x1>0){
+	document.write("In while loop"+x1+"<br>");
+	x1--;
+}
+*/
+/*
+var x=10;
+var y=--x+1;
+alert(y);
+var x=10;
+var y=x--+1;
+alert(y);
+var a=10;
+var b="10";
+document.write("Type of a:"+(typeof a)+"<br>");
+document.write("Type of b:"+(typeof b)+"<br>");
+document.write("Is a==b"+(a==b)+"<br>");
+document.write("Is a===b"+(a===b)+"<br>");
+var input=window.prompt("Enter temperature in celsius");
+var fahrenheit_result=(9*(input/5))+32;
+alert(fahrenheit_result);
+var year=2018;
+var month='Jul';
+var day=16;
+var full_date=day+"-"+month+"-"+year;
+document.write("<br>"+full_date+"<br>");
+var name1="Tom";
+var name2="Jerry";
+console.log(name1+" and "+name2)
+document.write(name1+" and "+name2);
+var n1="This is";
+var n2="Javascript";
+document.write("<br>"+n1.concat(n2).length);
+*/
+</script>
+</body>
+</html>
